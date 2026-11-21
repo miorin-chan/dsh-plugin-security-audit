@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Sicherheitsprüfung für Plugins",
+    "description": "Erstellt vor einem Plugin-Update einen Entwurf für die Sicherheitsprüfung des Codes."
+  }
+}

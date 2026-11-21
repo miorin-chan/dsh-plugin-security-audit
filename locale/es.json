@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Auditoría de seguridad de plugins",
+    "description": "Prepara un borrador para auditar la seguridad del código antes de actualizar un plugin."
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Plugin security audit",
+    "description": "Drafts a code security review before a plugin update."
+  }
+}
