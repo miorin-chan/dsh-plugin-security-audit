@@ -3,3 +3,7 @@
 /client.js
 /lib/
 *.tgz
+
+# Compiled tooling
+/scripts/build.mjs
+/scripts/sync-types.mjs
