@@ -1,5 +1,5 @@
 {
-  "name": "dsh-plugin-security-audit",
+  "name": "@miorin/dsh-plugin-security-audit",
   "version": "0.1.0",
   "private": true,
   "license": "MIT",

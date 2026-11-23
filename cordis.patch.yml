@@ -2,4 +2,4 @@
 # package.json `dsh.client` and carries Plugin security audit.
 - insert:
     - id: dsh-plugin-security-audit
-      name: 'dsh-plugin-security-audit'
+      name: '@miorin/dsh-plugin-security-audit'

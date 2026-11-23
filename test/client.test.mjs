@@ -5,6 +5,7 @@ import { test } from 'node:test'
 let registration
 globalThis.window = { __ModuleLoader__: { load(entry) { registration = entry } } }
 await import('../client.js')
+assert.equal(registration.id, '@miorin/dsh-plugin-security-audit')
 const require = createRequire(import.meta.url)
 
 const bundle = { name: '@fixture/plugin', installed: true, availability: 'profile', version: '1.0.0', update: 'registry' }
@@ -51,7 +52,7 @@ test('opens an unsent audit draft for the compatible stable update and cleans up
         effects.push(register())
       },
       register(options, render) {
-        assert.equal(options.id, registration.id)
+        assert.equal(options.id, 'dsh-plugin-security-audit')
         action = render
         return () => { action = undefined }
       },
@@ -67,7 +68,7 @@ test('opens an unsent audit draft for the compatible stable update and cleans up
     } },
     uiWorkspace: { startSession(...args) { requests.push(args) } },
   })
-  assert.equal(registered.ns, registration.id)
+  assert.equal(registered.ns, 'dsh-plugin-security-audit')
   assert.equal(Object.keys(registered.labels).length, 8)
   assert.equal(htmlHead.size, 1)
   const props = { subject: { kind: 'bundle', pkg: bundle }, t: key => registered.labels.zh[key], useRemoteAccess: key => access.has(key) }
