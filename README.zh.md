@@ -7,6 +7,6 @@ DSH 会打开新对话，在输入框预填当前版本和目标版本的代码�
 审核草稿后可自行发送。若 DSH 复用已有草稿的空白对话，提示词会追加到草稿末尾。
 
 支持 npm 注册表更新与官方目录更新。
-需要 DeepSeek Harness 0.2.2-rc.5 或更新版本及 Web 客户端，可在[插件聚合包](../dsh-plugin-atlas/README.zh.md)内独立启停。
+需要 DeepSeek Harness 0.2.2-rc.5 或更新版本及 Web 客户端，可在[插件聚合包](../dsh-atlas-plugin/README.zh.md)内独立启停。
 
 [项目文档](docs/README.md)
