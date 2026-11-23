@@ -8,7 +8,14 @@ DSH 0.2.2-rc.5 的原生「发现」详情、版本列表的单独版本行和�
 通过「发现」提供 Git 目标的更新也属于这个边界。
 审计按钮使用已安装详情的公开插槽。
 
-运行 `npm run build` 和 `npm run check`，再从工作区运行插件骨架校验。
+## 本地安装与验证
+
+在新检出的插件目录中运行 `pnpm install --frozen-lockfile`。
+`prepare` 会在安装依赖时构建插件。
+如需单独安装，可在 DSH 的 **插件 → 添加插件** 中选择该目录。
+
+准备好检出目录后，运行 `npm run check`，再从工作区运行插件骨架校验。
+修改源码后，先运行 `npm run build` 更新产物，再运行检查。
 行为测试覆盖候选选择、按钮点击只初始化草稿、访问限制和停用清理。
 
 开发约定见 [AGENTS.md](../AGENTS.md) 与 [AGENTS.local.md](../AGENTS.local.md)。
