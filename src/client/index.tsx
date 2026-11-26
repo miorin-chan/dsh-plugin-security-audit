@@ -103,8 +103,10 @@ export function apply(ctx: Context): void {
         color: var(--dsw-alias-label-primary); background: transparent;
         border: 1px solid var(--dsw-alias-border-l3);
       }
-      .${namespace}-button:hover { background: var(--dsw-alias-interactive-bg-hover); }
-      .${namespace}-button:focus-visible { outline: 2px solid var(--dsw-alias-brand-primary); outline-offset: 2px; }
+      @media (hover: hover) {
+        .${namespace}-button:hover { background: var(--dsw-alias-interactive-bg-hover); }
+      }
+      .${namespace}-button:focus-visible { outline: var(--dsw-focus-ring-width, 2px) solid var(--dsw-focus-ring-color, var(--dsw-alias-state-business-primary)); outline-offset: 2px; }
     `
     document.head.append(style)
     return () => style.remove()

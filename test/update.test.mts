@@ -31,3 +31,13 @@ test('registry updates require the current installed version and omit URL creden
   assert.equal(registryTarget(registryBundle, { ...list, installed: '0.1.0' }), undefined)
   assert.equal(registryTarget(registryBundle, { ...list, versions: list.versions.slice(0, 2) }), undefined)
 })
+
+test('auditPrompt matches regional Chinese locale codes and falls back to English', () => {
+  const target = { kind: 'catalog', name: '@example/plugin', from: '1.0.0', to: '1.1.0', spec: 'link:/plugin' } as const
+  for (const locale of ['zh', 'zh-CN', 'zh-TW', 'zh_Hans']) {
+    assert.match(auditPrompt(target, locale), /防御性的代码安全审计/)
+  }
+  for (const locale of ['en', 'ja']) {
+    assert.match(auditPrompt(target, locale), /Perform a defensive code security review/)
+  }
+})
