@@ -9,4 +9,14 @@ DSH 会打开新对话，在输入框预填当前版本和目标版本的代码�
 支持 npm 注册表更新与官方目录更新。
 需要 DeepSeek Harness 0.2.2-rc.5 或更新版本及 Web 客户端，可在[插件聚合包](../dsh-atlas-plugin/README.zh.md)内独立启停。
 
+## 实拍截图
+
+真实的「审计更新」按钮为合成测试包打开了未发送的草稿。
+没有执行审计。
+
+![真实的审计更新按钮为合成测试包打开的未发送草稿](docs/assets/screenshots/main-light.png)
+
+[深色模式主图](docs/assets/screenshots/main-dark.png) · 「审计更新」按钮
+([浅色](docs/assets/screenshots/entry-light.png) / [深色](docs/assets/screenshots/entry-dark.png))
+
 [项目文档](docs/README.md)
