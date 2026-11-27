@@ -1,4 +1,4 @@
-![Unsent draft opened by the Audit update control for a synthetic package fixture (Chinese interface)](assets/screenshots/main-light.png)
+![Unsent draft opened by the Audit update control for a demo package (Chinese interface)](assets/screenshots/main-light.png)
 
 No draft was sent and no audit was run.
 

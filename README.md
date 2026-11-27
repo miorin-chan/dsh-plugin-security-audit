@@ -14,10 +14,10 @@ The plugin is included in [Plugin Modular Improvement Plan](../dsh-atlas-plugin/
 
 ## Screenshots
 
-The real **Audit update** control opened an unsent draft for a synthetic package fixture.
+The real **Audit update** control opened an unsent draft for a demo package.
 No audit was run. The screenshots show the Chinese UI.
 
-![Unsent draft opened by the Audit update control for a synthetic package fixture](docs/assets/screenshots/main-light.png)
+![Unsent draft opened by the Audit update control for a demo package](docs/assets/screenshots/main-light.png)
 
 [Main view in dark mode](docs/assets/screenshots/main-dark.png) · Audit update control
 ([light](docs/assets/screenshots/entry-light.png) / [dark](docs/assets/screenshots/entry-dark.png))

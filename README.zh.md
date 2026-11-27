@@ -11,10 +11,10 @@ DSH 会打开新对话，在输入框预填当前版本和目标版本的代码�
 
 ## 实拍截图
 
-真实的「审计更新」按钮为合成测试包打开了未发送的草稿。
+真实的「审计更新」按钮为演示插件包打开了未发送的草稿。
 没有执行审计。
 
-![真实的审计更新按钮为合成测试包打开的未发送草稿](docs/assets/screenshots/main-light.png)
+![真实的审计更新按钮为演示插件包打开的未发送草稿](docs/assets/screenshots/main-light.png)
 
 [深色模式主图](docs/assets/screenshots/main-dark.png) · 「审计更新」按钮
 ([浅色](docs/assets/screenshots/entry-light.png) / [深色](docs/assets/screenshots/entry-dark.png))
